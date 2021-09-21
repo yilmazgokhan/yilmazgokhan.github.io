@@ -29,6 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			buttonClass {
 			  font-size: 120%;
 			  color: red;
+			  padding: 4px;
 			}
 </style>
 	</head>
@@ -83,7 +84,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  <input type="text" id="fname" name="fname" value="John"><br>
 		  <label for="lname">Last name:</label><br>
 		  <input type="text" id="lname" name="lname" value="Doe"><br>
-		  <span class="buttonClass"><input type="submit" value="Submit" id="btnSubmit"></span>
+		  <div>
+		  <button class="buttonClass" type="submit" id="btnSubmit">
+		  <span class="buttonClass">Submit</span>
+		  </button>
+		  </div>
 		</form>
 
 	</body>
