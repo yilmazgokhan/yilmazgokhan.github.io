@@ -25,6 +25,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				background-color: #dddddd;
 			}
 		</style>
+		<style>
+			buttonClass {
+			  font-size: 120%;
+			  color: red;
+			}
+</style>
 	</head>
 	<body>
 	<!-- Google Tag Manager (noscript) -->
@@ -69,6 +75,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<td>Italy</td>
 		  </tr>
 		</table>
+		
+		<h2>Text input fields</h2>
+
+		<form>
+		  <label for="fname">First name:</label><br>
+		  <input type="text" id="fname" name="fname" value="John"><br>
+		  <label for="lname">Last name:</label><br>
+		  <input type="text" id="lname" name="lname" value="Doe"><br>
+		  <span class="buttonClass"><input type="submit" value="Submit" id="btnSubmit"></span>
+		</form>
+
 	</body>
 </html>
 
