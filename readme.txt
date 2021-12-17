@@ -1,3 +1,0 @@
-Bootstrap Responsive Template
-
-...
