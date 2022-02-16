@@ -1,9 +1,12 @@
 google.com, pub-8198559254285925, DIRECT, f08c47fec0942fa0
+
 mopub.com, 6e3d40f806304aca8cb47e55f2dd2fc6, DIRECT, 74b46c0ea83967ca
 
 acd.op.hicloud.com,739719183541207040,DIRECT
 adx-dre.op.hicloud.com,739719183541207040,DIRECT
 adx-drru.op.hicloud.com,739719183541207040,DIRECT
 adx-dra.op.hicloud.com,739719183541207040,DIRECT
+
 mobupps.com,c74d97b01eae257e44aa9d5bade97baf9807,DIRECT
+
 catapultx.com,141027,DIRECT
