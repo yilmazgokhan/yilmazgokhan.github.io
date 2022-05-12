@@ -1,7 +1,10 @@
+//AdMob
 google.com, pub-8198559254285925, DIRECT, f08c47fec0942fa0
 
+//Mopub
 mopub.com, 6e3d40f806304aca8cb47e55f2dd2fc6, DIRECT, 74b46c0ea83967ca
 
+//Huawei
 acd.op.hicloud.com,739719183541207040,DIRECT
 adx-dre.op.hicloud.com,739719183541207040,DIRECT
 adx-drru.op.hicloud.com,739719183541207040,DIRECT
@@ -10,3 +13,13 @@ adx-dra.op.hicloud.com,739719183541207040,DIRECT
 mobupps.com,c74d97b01eae257e44aa9d5bade97baf9807,DIRECT
 
 catapultx.com,141027,DIRECT
+
+//Applovin
+applovin.com, 1c4f448cdcfc927471275ba6083d5f95, DIRECT
+adcolony.com, 5d8cbf6671c93a42, RESELLER, 1ad675c9de6b5176
+rubiconproject.com, 16356, RESELLER, 0bfd66d529a55807
+openx.com, 540785403, RESELLER, 6a698e2ec38604c6
+pubmatic.com, 159509, RESELLER, 5d62403b186f2ace
+pubnative.net, 1007170, RESELLER, d641df8625486a7b
+verve.com, 15290, RESELLER, 0c8f5958fc2d6270
+indexexchange.com, 192829, RESELLER, 50b1c356f2c5c8fc
