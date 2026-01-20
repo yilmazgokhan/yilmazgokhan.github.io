@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
 	<!--- Google Tag Manager
 	================================================== -->
-	 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	 })(window,document,'script','dataLayer','GTM-K4MWFJ7');</script>
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-K4MWFJ7');</script>
 
-   <!--- basic page needs
+	<!--- basic page needs
    ================================================== -->
-   <meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>Welcome</title>
-	<meta name="description" content="">  
+	<meta name="description" content="">
 	<meta name="author" content="Gokhan YILMAZ">
 
-   <!-- mobile specific metas
+	<!-- mobile specific metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
- 	<!-- CSS
+	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-   <!-- script
-   ================================================== -->   
+	<!-- script
+   ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
 	<script src="js/conf.js"></script>
+	<script src="js/portfolio.js"></script>
 
-   <!-- favicons
+	<!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
 
@@ -45,688 +51,322 @@
 
 	<!-- Google Tag Manager (noscript)
    ================================================== -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4MWFJ7"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4MWFJ7" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
 
 	<!-- header 
    ================================================== -->
-   <header>
-   </header> <!-- /header -->
+	<header>
+	</header> <!-- /header -->
 
 	<!-- intro section
    ================================================== -->
-   <section id="intro">   
+	<section id="intro">
 
-   	<div class="intro-overlay"></div>	
+		<div class="intro-overlay"></div>
 
-   	<div class="intro-content">
-   		<div class="row">
+		<div class="intro-content">
+			<div class="row">
 
-   			<div class="col-twelve">
+				<div class="col-twelve">
 
-	   			<h5>Hello, World.</h5>
-	   			<h1>I'm Gokhan Yilmaz.</h1>
+					<h5>Hello, World.</h5>
+					<h1>I'm Gokhan Yilmaz.</h1>
 
-	   			<p class="intro-position">
-	   				<span>Native Android Developer</span>
-	   				<span>Backend Developer</span> 
-	   			</p>
+					<p class="intro-position">
+						<span>Native Android Developer</span>
+						<span>Backend Developer</span>
+					</p>
 
-	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+					<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
 
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
+				</div>
 
-   	<ul class="intro-social">        
-         <li><a href="https://www.linkedin.com/in/yilmaz-gokhan/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-         <li><a href="https://medium.com/@yilmazgokhan" target="_blank"><i class="fa fa-medium"target="_blank"></i></a></li>
-		 <li><a href="https://github.com/yilmazgokhan" target="_blank"><i class="fa fa-github"></i></a></li>
-         <li><a href="https://twitter.com/__gokhanyilmaz" target="_blank"><i class="fa fa-twitter"target="_blank"></i></a></li>
-         <li><a href="#"><i class="fa fa-instagram" target="_blank"></i></a></li>
-      </ul> <!-- /intro-social -->      	
+			</div>
+		</div> <!-- /intro-content -->
 
-   </section> <!-- /intro -->
+		<ul class="intro-social">
+			<li><a href="https://www.linkedin.com/in/yilmaz-gokhan/" target="_blank"><i class="fa fa-linkedin"></i></a>
+			</li>
+			<li><a href="https://medium.com/@yilmazgokhan" target="_blank"><i class="fa fa-medium"
+						target="_blank"></i></a></li>
+			<li><a href="https://github.com/yilmazgokhan" target="_blank"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://twitter.com/__gokhanyilmaz" target="_blank"><i class="fa fa-twitter"
+						target="_blank"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" target="_blank"></i></a></li>
+		</ul> <!-- /intro-social -->
+
+	</section> <!-- /intro -->
 
 
-   <!-- about section
+	<!-- about section
    ================================================== -->
-   <section id="about">  
+	<section id="about">
 
-   	<div class="row section-intro">
-   		<div class="col-twelve">
+		<div class="row section-intro">
+			<div class="col-twelve">
 
-   			<h5>About</h5>
-   			<h1>Let me introduce myself.</h1>
+				<h5>About</h5>
+				<h1>Let me introduce myself.</h1>
 
-   			<div class="intro-info">
+				<div class="intro-info">
 
-   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+					<img src="images/profile-pic.jpg" alt="Profile Picture">
 
-   				<p class="lead">I'm native Android developer and coding Java & Kotlin. Currently, I am working as Software Engineer at ICterra Information and Communication Technologies Turkey.</p>
-				<p class="lead">My personal interests are new technologies on the software world and developments on mobile industry. I am working on Android platform and publish apps on GooglePlay and Huawei App Gallery. 
-					Also, I am writing simple backend projects for Rest API.</p>
-			</div>   			
+					<p class="lead">I'm native Android developer and coding Java & Kotlin. Currently, I am working as
+						Software Engineer at ICterra Information and Communication Technologies Turkey.</p>
+					<p class="lead">My personal interests are new technologies on the software world and developments on
+						mobile industry. I am working on Android platform and publish apps on GooglePlay and Huawei App
+						Gallery.
+						Also, I am writing simple backend projects for Rest API.</p>
+				</div>
 
-   		</div>   		
-   	</div> <!-- /section-intro -->
+			</div>
+		</div> <!-- /section-intro -->
 
-   </section> <!-- /process-->    
+	</section> <!-- /process-->
 
 
-   <!-- resume Section
+	<!-- resume Section
    ================================================== -->
 	<section id="resume" class="grey-section">
 
 		<div class="row section-intro">
-   		<div class="col-twelve">
+			<div class="col-twelve">
 
-   			<h5>Resume</h5>
-   			<h1>More of my credentials.</h1>
+				<h5>Resume</h5>
+				<h1>More of my credentials.</h1>
 
-			<!--
+				<!--
    			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 			-->
 
-   		</div>   		
-   	</div> <!-- /section-intro--> 
+			</div>
+		</div> <!-- /section-intro-->
 
-   	<div class="row resume-timeline">
+		<div class="row resume-timeline">
 
-   		<div class="col-twelve resume-header">
+			<div class="col-twelve resume-header">
 
-   			<h2>Work Experience</h2>
+				<h2>Work Experience</h2>
 
-   		</div> <!-- /resume-header -->
+			</div> <!-- /resume-header -->
 
-   		<div class="col-twelve">
+			<div class="col-twelve">
 
-   			<div class="timeline-wrap">
-				
-				<div class="timeline-block">
+				<div class="timeline-wrap">
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
+					<div class="timeline-block">
 
-	   				<div class="timeline-header">
-	   					<h3>Android Developer</h3>
-	   					<p>Oct 2023 - Present</p>
-	   				</div>
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-	   				<div class="timeline-content">
-	   					<h4>ICterra Information and Communication Technologies</h4>
-	   					<p>Development of Android application</p>
-	   				</div>
+						<div class="timeline-header">
+							<h3>Android Developer</h3>
+							<p>Oct 2023 - Present</p>
+						</div>
 
-	   			</div> <!-- /timeline-block -->
-				
-				<div class="timeline-block">
+						<div class="timeline-content">
+							<h4>ICterra Information and Communication Technologies</h4>
+							<p>Development of Android application</p>
+						</div>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
+					</div> <!-- /timeline-block -->
 
-	   				<div class="timeline-header">
-	   					<h3>Software Engineer</h3>
-	   					<p>Aug 2023 - Oct 2023</p>
-	   				</div>
+					<div class="timeline-block">
 
-	   				<div class="timeline-content">
-	   					<h4>Yapı Kredi Teknoloji</h4>
-	   					<p>Development of Android application</p>
-	   				</div>
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-	   			</div> <!-- /timeline-block -->
-				
-				<div class="timeline-block">
+						<div class="timeline-header">
+							<h3>Software Engineer</h3>
+							<p>Aug 2023 - Oct 2023</p>
+						</div>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
+						<div class="timeline-content">
+							<h4>Yapı Kredi Teknoloji</h4>
+							<p>Development of Android application</p>
+						</div>
 
-	   				<div class="timeline-header">
-	   					<h3>Software Engineer</h3>
-	   					<p>July 2022 - Aug 2023</p>
-	   				</div>
+					</div> <!-- /timeline-block -->
 
-	   				<div class="timeline-content">
-	   					<h4>ATP</h4>
-	   					<p>Development of Android application</p>
-	   				</div>
+					<div class="timeline-block">
 
-	   			</div> <!-- /timeline-block -->
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-   				<div class="timeline-block">
+						<div class="timeline-header">
+							<h3>Software Engineer</h3>
+							<p>July 2022 - Aug 2023</p>
+						</div>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
+						<div class="timeline-content">
+							<h4>ATP</h4>
+							<p>Development of Android application</p>
+						</div>
 
-	   				<div class="timeline-header">
-	   					<h3>Software Engineer</h3>
-	   					<p>Nov 2021 - July 2022</p>
-	   				</div>
+					</div> <!-- /timeline-block -->
 
-	   				<div class="timeline-content">
-	   					<h4>Huawei</h4>
-	   					<p>Development of several Android applications as open-source</br>Development of several Android mediation plugin</br>Huawei Ads Supports
-						</br>Organization of HMS classes at BAU</p>
-	   				</div>
+					<div class="timeline-block">
 
-	   			</div> <!-- /timeline-block -->
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-	   			<div class="timeline-block">
+						<div class="timeline-header">
+							<h3>Software Engineer</h3>
+							<p>Nov 2021 - July 2022</p>
+						</div>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
+						<div class="timeline-content">
+							<h4>Huawei</h4>
+							<p>Development of several Android applications as open-source</br>Development of several
+								Android mediation plugin</br>Huawei Ads Supports
+								</br>Organization of HMS classes at BAU</p>
+						</div>
 
-	   				<div class="timeline-header">
-	   					<h3>Assistant Software Engineer</h3>
-	   					<p>May 2020 - Nov 2021</p>
-	   				</div>
+					</div> <!-- /timeline-block -->
 
-	   				<div class="timeline-content">
-	   					<h4>Huawei</h4>
-	   					<p>Development of several Android applications as open-source</p>
-	   				</div>
+					<div class="timeline-block">
 
-	   			</div> <!-- /timeline-block -->
-				   
-	   			<div class="timeline-block">
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-					<div class="timeline-ico">
-						<i class="fa fa-briefcase"></i>
-					</div>
+						<div class="timeline-header">
+							<h3>Assistant Software Engineer</h3>
+							<p>May 2020 - Nov 2021</p>
+						</div>
 
-					<div class="timeline-header">
-						<h3>Mobile App Developer</h3>
-						<p>Oct 2019 - May 2020</p>
-					</div>
+						<div class="timeline-content">
+							<h4>Huawei</h4>
+							<p>Development of several Android applications as open-source</p>
+						</div>
 
-					<div class="timeline-content">
-						<h4>Ebebek</h4>
-						<p>Bug fix on Ebebek mobile applications</br>Development of a module of the new Ebebek Android application</br>Examining API monitoring systems</p>
-					</div>
+					</div> <!-- /timeline-block -->
 
-				</div> <!-- /timeline-block -->
+					<div class="timeline-block">
 
-	   			<div class="timeline-block">
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
+						<div class="timeline-header">
+							<h3>Mobile App Developer</h3>
+							<p>Oct 2019 - May 2020</p>
+						</div>
 
-	   				<div class="timeline-header">
-	   					<h3>Mobile Developer (Freelance)</h3>
-	   					<p>Jul 2019 - Oct 2019</p>
-	   				</div>
+						<div class="timeline-content">
+							<h4>Ebebek</h4>
+							<p>Bug fix on Ebebek mobile applications</br>Development of a module of the new Ebebek
+								Android application</br>Examining API monitoring systems</p>
+						</div>
 
-	   				<div class="timeline-content">
-	   					<h4>Ecza Chat</h4>
-	   					<p>Development of Eczachat Android application</p>
-	   				</div>
+					</div> <!-- /timeline-block -->
 
-	   			</div> <!-- /timeline-block -->
+					<div class="timeline-block">
 
-	   			<div class="timeline-block">
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
+						<div class="timeline-header">
+							<h3>Mobile Developer (Freelance)</h3>
+							<p>Jul 2019 - Oct 2019</p>
+						</div>
 
-	   				<div class="timeline-header">
-	   					<h3>Mobile Developer</h3>
-	   					<p>Jun 2019 - Jul 2019</p>
-	   				</div>
+						<div class="timeline-content">
+							<h4>Ecza Chat</h4>
+							<p>Development of Eczachat Android application</p>
+						</div>
 
-	   				<div class="timeline-content">
-	   					<h4>Arge RF</h4>
-	   					<p>Development of several Android applications</p>
-	   				</div>
+					</div> <!-- /timeline-block -->
 
-	   			</div> <!-- /timeline-block -->
+					<div class="timeline-block">
 
-   			</div> <!-- /timeline-wrap -->   			
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
 
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-   	
-   	<div class="row resume-timeline">
+						<div class="timeline-header">
+							<h3>Mobile Developer</h3>
+							<p>Jun 2019 - Jul 2019</p>
+						</div>
 
-   		<div class="col-twelve resume-header">
+						<div class="timeline-content">
+							<h4>Arge RF</h4>
+							<p>Development of several Android applications</p>
+						</div>
 
-   			<h2>Education</h2>
+					</div> <!-- /timeline-block -->
 
-   		</div> <!-- /resume-header -->
+				</div> <!-- /timeline-wrap -->
 
-   		<div class="col-twelve">
+			</div> <!-- /col-twelve -->
 
-   			<div class="timeline-wrap">
+		</div> <!-- /resume-timeline -->
 
-   				<div class="timeline-block">
+		<div class="row resume-timeline">
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
+			<div class="col-twelve resume-header">
 
-	   				<div class="timeline-header">
-	   					<h3>Bachelor Degree</h3>
-	   					<p>2019</p>
-	   				</div>
+				<h2>Education</h2>
 
-	   				<div class="timeline-content">
-	   					<h4>Erciyes University</h4>
-	   					<p>
-							Computer Engineering department</p>
-	   				</div>
+			</div> <!-- /resume-header -->
 
-	   			</div> <!-- /timeline-block -->
+			<div class="col-twelve">
 
-   			</div> <!-- /timeline-wrap -->   			
+				<div class="timeline-wrap">
 
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-		
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Bachelor Degree</h3>
+							<p>2019</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Erciyes University</h4>
+							<p>
+								Computer Engineering department</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+				</div> <!-- /timeline-wrap -->
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /resume-timeline -->
+
 	</section> <!-- /features -->
 
 
-	<!-- Portfolio Section
-   ================================================== -->
+	<!-- Portfolio Section -->
 	<section id="portfolio">
 
 		<div class="row section-intro">
-   			<div class="col-twelve">
-   				<h5>Portfolio</h5>
-   				<h1>Check Out Some of My Works.</h1>
-   			</div>   		
-   		</div>
-
-   	<div class="row portfolio-content">
-
-   		<div class="col-twelve">
-
-   			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-3 block-mob-full stack">
-
-	         	<div class="bgrid folio-item">
-	            	<div class="item-wrap">
-						<img src="images/portfolio/image_of_day.png" alt="image_of_day">
-						<a href="#modal-01" class="overlay">	                  	           
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-								<h3 class="folio-title">Image of Day</h3>	     					    
-										<span class="folio-types">
-											Android App Development
-										</span>
-								</div>	                      	
-							</div>                    
-						</a>
-	            </div>	               
-	        		</div> <!-- /folio-item -->
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/sap.png" alt="sap">
-	               	<a href="#modal-02" class="overlay">              		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">SAP Web-GUI</h3>	     					    
-		     					    	<span class="folio-types">
-										Android App Development
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/find_it.png"alt="find_it">
-	                  <a href="#modal-03" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Find It</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Android App Development
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-					
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/bike_stations_network.png" alt="bike_stations_network">
-						   <a href="#modal-04" class="overlay">
-							  <div class="folio-item-table">
-								  <div class="folio-item-cell">
-									  <h3 class="folio-title">Bike Stations Network</h3>	     					    
-											  <span class="folio-types">
-												 Android App Development
-											</span>		     		
-										 </div>	                      	
-							  </div>                    
-						   </a>
-						</div>
-						 </div> <!-- /folio-item -->   
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/track_corona.png" alt="track_corona">
-	                  <a href="#modal-05" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Track Corona</h3>	     					    
-		     					    	<span class="folio-types">
-											Android App Development
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/iss_detector.png" alt="Salad">
-	                  <a href="#modal-06" class="overlay">
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">ISS Detector</h3>	     					    
-		     					    	<span class="folio-types">
-											Android App Development
-		     					      </span>		     		
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-					   <div class="item-wrap">
-						   <img src="images/portfolio/contacts.png" alt="Salad">
-						  <a href="#modal-07" class="overlay">
-							 <div class="folio-item-table">
-								 <div class="folio-item-cell">
-									 <h3 class="folio-title">Contacts</h3>	     					    
-											 <span class="folio-types">
-												Android App Development
-										   </span>		     		
-										</div>	                      	
-							 </div>                    
-						  </a>
-					   </div>
-						</div> <!-- /folio-item -->    
-
-						<div class="bgrid folio-item">
-						   <div class="item-wrap">
-							   <img src="images/portfolio/series_tracker.png" alt="Salad">
-							  <a href="#modal-08" class="overlay">
-								 <div class="folio-item-table">
-									 <div class="folio-item-cell">
-										 <h3 class="folio-title">Series Tracker</h3>	     					    
-												 <span class="folio-types">
-													Android App Development
-											   </span>		     		
-											</div>	                      	
-								 </div>                    
-							  </a>
-						   </div>
-							</div> <!-- /folio-item -->  
-
-							<div class="bgrid folio-item">
-							   <div class="item-wrap">
-								   <img src="images/portfolio/where-is-my-vehicle.png" alt="Salad">
-								  <a href="#modal-09" class="overlay">
-									 <div class="folio-item-table">
-										 <div class="folio-item-cell">
-											 <h3 class="folio-title">Where is my vehicle</h3>	     					    
-													 <span class="folio-types">
-														Android App Development
-												   </span>		     		
-												</div>	                      	
-									 </div>                    
-								  </a>
-							   </div>
-								</div> <!-- /folio-item -->  
-
-								<div class="bgrid folio-item">
-								   <div class="item-wrap">
-									   <img src="images/portfolio/kelime_hafizam.png" alt="Salad">
-									  <a href="#modal-10" class="overlay">
-										 <div class="folio-item-table">
-											 <div class="folio-item-cell">
-												 <h3 class="folio-title">Kelime Hafizam</h3>	     					    
-														 <span class="folio-types">
-															Android App Development
-													   </span>		     		
-													</div>	                      	
-										 </div>                    
-									  </a>
-								   </div>
-									</div> <!-- /folio-item -->  
-
-	            <!-- modal popups - begin
-	            ============================================================= -->
-	            <div id="modal-01" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-image_of_day.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Image of Day</h4>		      
-					      <p>One photo from space every day.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://appgallery.huawei.com/app/C104856517" target="_blank">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-01 -->
-
-				   <div id="modal-02" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/sap.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>SAP Web-GUI</h4>		      
-					      <p>Private project a company</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="#">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-02 -->
-
-				   <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-find_it.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Find It</h4>		      
-					      <p>Türkiye'nin illerine ne kadar hakimsin?</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://appgallery.huawei.com/#/app/C104185389" target="_blank">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-03 -->
-
-				   <div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-bike_stations_network.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Bike Station Network</h4>		      
-					      <p>Explore amazing new countries and share your experiences with your friends.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://appgallery.huawei.com/#/app/C103469557" target="_blank">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-04 -->
-
-				   <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/track_corona.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Track Corona</h4>		      
-					      <p>I coded an Android app which uses Huawei Map Kit and Huawei Native Ads Kit together. The app has a single screen, this screen has a fullscreen Map and Bottom Sheet Dialog. Users can select “World Wide” for see all countries’ Corona information or users can select specific country from list for same purpose. The information shows in custom InfoWindow.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			        	<a href="https://github.com/yilmazgokhan/Track-Corona" target="_blank">Details</a>
-					    <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-05 -->
-
-				   <div id="modal-06" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-iss_detector.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-							<h4>ISS Detector</h4>		      
-							<p>Track the ISS.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://appgallery.huawei.com/#/app/C102788141" target="_blank">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		   
-
-				   </div> <!-- /modal-06 -->
-
-				   <div id="modal-07" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-contacts.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-							<h4>Contacts</h4>		      
-							<p>Contacts App helps you to backup, restore and save all your precious contacts.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="#">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		   
-
-				   </div> <!-- /modal-07 -->
-
-				   <div id="modal-08" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-series_tracker.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-							<h4>Series Tracker</h4>		      
-							<p>Users can find all theirs favourite TV shows and add them to their own library. Users can track all series same time.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://play.google.com/store/apps/details?id=com.gokhanyilmaz.appseriestracker" target="_blank">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		   
-
-				   </div> <!-- /modal-08 -->
-
-				   <div id="modal-09" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-where-is-my-vehicle.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-							<h4>Where is my vehicle</h4>		      
-							<p>Track all your vehicles location in real time.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://play.google.com/store/apps/details?id=com.rfnavigasyon.argerfaractakip" target="_blank">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		   
-
-				   </div> <!-- /modal-09 -->
-
-				   <div id="modal-10" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-kelime_hafizam.png" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-							<h4>Kelime Hafizam</h4>		      
-							<p>Before you start the game, your words are prepared according to the number of words and difficulty options you choose. 
-								Words remain on your screen until you ask for your review, and when you are ready, 
-								you can use the ‘Start Writing’ button to make the words disappear, and this is your turn, you have to type the words in the correct order.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://play.google.com/store/apps/details?id=com.gokhanyilmaz.appkelimehafizam6&hl=en" target="_blank">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		   
-
-				   </div> <!-- /modal-10 -->
-
-				   <!-- modal popups - end
-	            ============================================================= -->
-
-	         </div> <!-- /portfolio-wrapper --> 
-
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
-		
-	</section> <!-- /portfolio --> 
+			<div class="col-twelve">
+				<h5>Portfolio</h5>
+				<h1>Check Out Some of My Works.</h1>
+			</div>
+		</div>
+		<div class="row portfolio-content">
+			<div class="col-twelve">
+				<div id="portfolioGrid" class="portfolio-grid">
+					<!-- JS buraya projeleri basacak -->
+				</div>
+			</div>
+		</div>
+
+	</section> <!-- /portfolio -->
 
 
 	<!-- Medium Posts Section
@@ -734,61 +374,61 @@
 	<section id="cta" class="grey-section">
 		<div class="row section-intro">
 			<div class="col-twelve">
- 
+
 				<h5>Articles</h5>
 				<h1>Check Out Some of My Medium Posts.</h1>
- 
-			</div>   		
-		</div> <!-- /section-intro--> 
-		
-   	<div class="row cta-content">
-		<div id="medium-widget"></div>
-    	<script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    	<script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@yilmazgokhan","postsPerLine":2,"limit":10,"picture":"big","fields":["description","author","publishAt"],"ratio":"original"}})</script>
-   	</div> <!-- /medium-post-content -->
 
-   </section> <!-- /medium --> 
+			</div>
+		</div> <!-- /section-intro-->
 
-	
-   <!-- contact
+		<div class="row cta-content">
+			<div id="medium-widget"></div>
+			<script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+			<script>MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@yilmazgokhan", "postsPerLine": 2, "limit": 10, "picture": "big", "fields": ["description", "author", "publishAt"], "ratio": "original" } })</script>
+		</div> <!-- /medium-post-content -->
+
+	</section> <!-- /medium -->
+
+
+	<!-- contact
    ================================================== -->
 	<section id="contact">
 
 		<div class="row section-intro">
-   		<div class="col-twelve">
+			<div class="col-twelve">
 
-   			<h5>Contact</h5>
+				<h5>Contact</h5>
 
-   		</div> 
-   	</div> <!-- /section-intro -->
+			</div>
+		</div> <!-- /section-intro -->
 
-   	<div class="row contact-info">
+		<div class="row contact-info">
 
-   		<div class="col-six tab-full">
+			<div class="col-six tab-full">
 
-   			<div class="icon">
-   				<i class="icon-pin"></i>
-   			</div>
+				<div class="icon">
+					<i class="icon-pin"></i>
+				</div>
 
-   			<h5>Where to find me</h5>
+				<h5>Where to find me</h5>
 
-   			<p>Istanbul, TURKEY</p>
+				<p>Istanbul, TURKEY</p>
 
-   		</div>
+			</div>
 
-   		<div class="col-six tab-full collapse">
+			<div class="col-six tab-full collapse">
 
-   			<div class="icon">
-   				<i class="icon-mail"></i>
-   			</div>
+				<div class="icon">
+					<i class="icon-mail"></i>
+				</div>
 
-   			<h5>Email Me At</h5>
+				<h5>Email Me At</h5>
 
-   			<p>yilmaz_gokhan@yahoo.com</p>
+				<p>yilmaz_gokhan@yahoo.com</p>
 
-   		</div>
+			</div>
 
-		<!--
+			<!--
    		<div class="col-four tab-full">
 
    			<div class="icon">
@@ -804,53 +444,65 @@
 
    		</div>
 		-->
-   		
-   	</div> <!-- /contact-info -->
-		
+
+		</div> <!-- /contact-info -->
+
 	</section> <!-- /contact -->
 
 
-   <!-- footer
+	<!-- footer
    ================================================== -->
-   <footer>
-     	<div class="row">
+	<footer>
+		<div class="row">
 
-     		<div class="col-six tab-full pull-right social">
+			<div class="col-six tab-full pull-right social">
 
-     			<ul class="footer-social">        
-				  <li><a href="https://www.linkedin.com/in/yilmaz-gokhan/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-				  <li><a href="https://medium.com/@yilmazgokhan" target="_blank"><i class="fa fa-medium"target="_blank"></i></a></li>
-				  <li><a href="https://github.com/yilmazgokhan" target="_blank"><i class="fa fa-github"></i></a></li>
-				  <li><a href="https://twitter.com/__gokhanyilmaz" target="_blank"><i class="fa fa-twitter" target="_blank"></i></a></li>
-				  <li><a href="#"><i class="fa fa-instagram" target="_blank"></i></a></li>
-			   </ul> 
-	      		
-	      </div>
+				<ul class="footer-social">
+					<li><a href="https://www.linkedin.com/in/yilmaz-gokhan/" target="_blank"><i
+								class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://medium.com/@yilmazgokhan" target="_blank"><i class="fa fa-medium"
+								target="_blank"></i></a></li>
+					<li><a href="https://github.com/yilmazgokhan" target="_blank"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://twitter.com/__gokhanyilmaz" target="_blank"><i class="fa fa-twitter"
+								target="_blank"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" target="_blank"></i></a></li>
+				</ul>
 
-      	<div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>© Copyright Gokhan Yilmaz 2021.</span> 
-		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
-		         </div>		                  
-	      	</div>
+			</div>
 
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
+			<div class="col-six tab-full">
+				<div class="copyright">
+					<span>© Copyright Gokhan Yilmaz 2021.</span>
+					<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+				</div>
+			</div>
 
-      	</div> <!-- /row -->     	
-   </footer>  
+			<div id="go-top">
+				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+			</div>
 
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
+		</div> <!-- /row -->
+	</footer>
 
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
 
+	<!-- Java Script
+   ================================================== -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<div class="modal" id="projectModal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<img id="modalImage" />
+			<h3 id="modalTitle"></h3>
+			<p id="modalDescription"></p>
+			<a id="modalLink" target="_blank">View Project</a>
+		</div>
+	</div>
 </body>
 
 </html>
