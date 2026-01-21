@@ -19,15 +19,21 @@ html {
 }
 
 @media (max-width: 1024px) {
-  html { font-size: 9.4118px; }
+  html {
+    font-size: 9.4118px;
+  }
 }
 
 @media (max-width: 768px) {
-  html { font-size: 10px; }
+  html {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 400px) {
-  html { font-size: 9.4118px; }
+  html {
+    font-size: 9.4118px;
+  }
 }
 
 html,
@@ -65,65 +71,89 @@ a:active {
 /* ===================================================================
    Headings
    =================================================================== */
-h1, h2, h3, h4, h5, h6,
-.h01, .h02, .h03, .h04, .h05, .h06 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h01,
+.h02,
+.h03,
+.h04,
+.h05,
+.h06 {
   font-family: var(--font-heading);
   font-weight: 600;
   color: var(--color-heading);
   margin-bottom: 2.1rem;
 }
 
-h3, .h03,
-h4, .h04 {
+h3,
+.h03,
+h4,
+.h04 {
   margin-bottom: 1.8rem;
 }
 
-h5, .h05,
-h6, .h06 {
+h5,
+.h05,
+h6,
+.h06 {
   font-weight: 700;
   margin-bottom: 1.2rem;
 }
 
-h1, .h01 {
+h1,
+.h01 {
   font-size: 3.1rem;
   line-height: 1.355;
   letter-spacing: -0.1rem;
 }
 
 @media (max-width: 600px) {
-  h1, .h01 {
+
+  h1,
+  .h01 {
     font-size: 2.6rem;
     letter-spacing: -0.07rem;
   }
 }
 
-h2, .h02 {
+h2,
+.h02 {
   font-size: 2.4rem;
   line-height: 1.25;
 }
 
-h3, .h03 {
+h3,
+.h03 {
   font-size: 2rem;
   line-height: 1.5;
 }
 
-h4, .h04 {
+h4,
+.h04 {
   font-size: 1.7rem;
   line-height: 1.765;
 }
 
-h5, .h05,
-h6, .h06 {
+h5,
+.h05,
+h6,
+.h06 {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
 
-h5, .h05 {
+h5,
+.h05 {
   font-size: 1.4rem;
   line-height: 1.714;
 }
 
-h6, .h06 {
+h6,
+.h06 {
   font-size: 1.3rem;
   line-height: 1.846;
 }
@@ -220,7 +250,7 @@ code {
   border-radius: 3px;
 }
 
-pre > code {
+pre>code {
   display: block;
   padding: 0;
   background: none;
@@ -414,14 +444,14 @@ input[type="radio"] {
   display: inline-block;
 }
 
-label > .label-text {
+label>.label-text {
   margin-left: 1rem;
   font-family: var(--font-body);
   font-weight: 400;
 }
 
-label > input[type="checkbox"],
-label > input[type="radio"] {
+label>input[type="checkbox"],
+label>input[type="radio"] {
   position: relative;
   top: 0.15rem;
 }
@@ -430,7 +460,8 @@ label > input[type="radio"] {
 /* Placeholder (modern browsers) */
 ::placeholder {
   color: #a1a1a1;
-  opacity: 1; /* Safari fix */
+  opacity: 1;
+  /* Safari fix */
 }
 
 
@@ -441,62 +472,62 @@ label > input[type="radio"] {
  * ------------------------------------------------------------------- 
  */
 .btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-	height: 5.2rem;
-	padding: 0 3rem;
+  height: 5.2rem;
+  padding: 0 3rem;
 
-	font-family: var(--font-heading);
-	font-size: 1.4rem;
-	font-weight: 600;
-	letter-spacing: 0.15rem;
-	text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
 
-	color: #313131;
-	background: #d8d8d8;
-	border: none;
-	cursor: pointer;
-	text-decoration: none;
-	white-space: nowrap;
+  color: #313131;
+  background: #d8d8d8;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
 
-	transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover,
 .btn:focus {
-	background: #bebebe;
-	color: #000;
-	outline: none;
+  background: #bebebe;
+  color: #000;
+  outline: none;
 }
 
 /* Primary */
 .btn--primary {
-	background: #313131;
-	color: #fff;
+  background: #313131;
+  color: #fff;
 }
 
 .btn--primary:hover,
 .btn--primary:focus {
-	background: #1f1f1f;
+  background: #1f1f1f;
 }
 
 /* Outline */
 .btn--outline {
-	background: transparent;
-	border: 2px solid #313131;
-	color: #313131;
+  background: transparent;
+  border: 2px solid #313131;
+  color: #313131;
 }
 
 .btn--outline:hover {
-	border-color: #ff0077;
-	color: #ff0077;
+  border-color: #ff0077;
+  color: #ff0077;
 }
 
 /* Full width */
 .btn--block {
-	width: 100%;
+  width: 100%;
 }
 
 
@@ -674,51 +705,69 @@ header .row {
 #about {
   background: #fff;
   padding-block: clamp(8rem, 10vw, 12rem);
+  padding-bottom: clamp(10rem, 12vw, 14rem);
 }
 
-/* Intro spacing fix */
+/* Section intro genişliği */
 #about .section-intro {
+  max-width: 1100px;
   margin-bottom: 3rem;
 }
 
 /* Profile + text layout */
 .intro-info {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 3rem;
-  align-items: center;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 4rem;
+  align-items: flex-start;
   max-width: 900px;
   margin-inline: auto;
+  align-items: center;
 }
 
 /* Profile image */
 .intro-info img {
-  width: 9rem;
-  height: 9rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Text wrapper */
+.intro-text {
+  width: 100%;
 }
 
 /* About text */
-.intro-info .lead {
-  margin: 0;
-  text-align: left;
+.intro-text .lead {
+  max-width: 65ch;
+  line-height: 1.85;
+  font-size: 1.7rem;
+  color: #555;
+  margin-bottom: 1.6rem;
 }
 
 /* Mobile */
 @media (max-width: 600px) {
   .intro-info {
     grid-template-columns: 1fr;
+    gap: 2.4rem;
     text-align: center;
   }
 
   .intro-info img {
     margin-inline: auto;
+    width: 13rem;
+    height: 13rem;
   }
 
-  .intro-info .lead {
+  .intro-text .lead {
+    margin-inline: auto;
     text-align: center;
   }
 }
+
 
 /* ==================================================
    Resume
@@ -839,138 +888,151 @@ header .row {
    Portfolio
    ================================================== */
 #portfolio {
-	background: #fff;
-	padding: 12rem 0;
+  background: #fff;
+  padding: 12rem 0;
 }
 
 #portfolioGrid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 .portfolio-card {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .portfolio-image {
-	aspect-ratio: 4 / 3;
-	overflow: hidden;
-	border-radius: 12px;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .portfolio-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 .portfolio-card:hover .portfolio-image img {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .portfolio-card h4 {
-	margin-top: 1.2rem;
-	text-align: center;
-	font-family: var(--font-heading);
-	font-weight: 600;
+  margin-top: 1.2rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 600;
 }
 
 /* =========================
    Modal
    ========================= */
 .modal {
-	position: fixed;
-	inset: 0;
-	background: rgba(0, 0, 0, 0.7);
-	display: none;
-	align-items: center;
-	justify-content: center;
-	z-index: 1000;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .modal.active {
-	display: flex;
+  display: flex;
 }
 
 .modal-content {
-	background: #fff;
-	border-radius: 12px;
-	max-width: 520px;
-	width: 90%;
-	padding: 2.4rem;
-	position: relative;
-	text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 520px;
+  width: 90%;
+  padding: 2.4rem;
+  position: relative;
+  text-align: center;
 }
 
 .modal-content img {
-	width: 100%;
-	border-radius: 8px;
-	margin-bottom: 1.6rem;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1.6rem;
 }
 
 .modal-content h3 {
-	font-family: var(--font-heading);
-	font-size: 2rem;
-	margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .modal-content p {
-	font-family: var(--font-body);
-	font-size: 1.5rem;
-	color: #666;
-	margin-bottom: 2rem;
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
 }
 
 .modal-content a {
-	display: inline-block;
-	padding: 1.2rem 2.4rem;
-	background: #313131;
-	color: #fff;
-	border-radius: 6px;
-	text-decoration: none;
-	font-size: 1.4rem;
-	transition: background 0.3s ease;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  background: #313131;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: background 0.3s ease;
 }
 
 .modal-content a:hover {
-	background: #ff0077;
+  background: #ff0077;
 }
 
 .modal .close {
-	position: absolute;
-	top: 1.2rem;
-	right: 1.2rem;
-	font-size: 2.4rem;
-	cursor: pointer;
-	color: #333;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* small animation */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* ===================================================================
    Call To Action (Articles / Medium)
    =================================================================== */
 #cta {
-	padding: 10rem 0;
-	text-align: center;
+  padding: 10rem 0;
+  text-align: center;
 }
 
 #cta p.lead {
-	color: #6e6e6e;
+  color: #6e6e6e;
 }
 
 .cta-content {
-	max-width: 640px;
-	margin-inline: auto;
+  max-width: 640px;
+  margin-inline: auto;
 }
 
 /* Responsive */
 @media (max-width: 650px) {
-	.cta-content h1 {
-		font-size: 2.4rem;
-	}
+  .cta-content h1 {
+    font-size: 2.4rem;
+  }
 }
 
 /* ================================
@@ -1084,78 +1146,6 @@ footer .social {
   }
 }
 
-
-/* =========================
-   CUSTOM JS MODAL (FIX)
-========================= */
-
-.modal {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.7);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 999999; /* template'in üstüne çık */
-}
-
-.modal.active {
-    display: flex;
-}
-
-.modal-content {
-    background: #ffffff;
-    max-width: 600px;
-    width: 90%;
-    border-radius: 16px;
-    padding: 24px;
-    position: relative;
-    animation: modalFadeIn 0.25s ease;
-}
-
-.modal-content img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 16px;
-}
-
-.modal-content h3 {
-    margin-bottom: 8px;
-}
-
-.modal-content p {
-    margin-bottom: 16px;
-}
-
-.modal-content a {
-    display: inline-block;
-    padding: 10px 16px;
-    background: #cc005f;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-.close {
-    position: absolute;
-    right: 16px;
-    top: 12px;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-/* small animation */
-@keyframes modalFadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 /* ==================================================
    Go To Top Button (vanilla JS)
    ================================================== */
@@ -1205,4 +1195,3 @@ footer .social {
   border-color: #cc005f;
   color: #fff;
 }
-

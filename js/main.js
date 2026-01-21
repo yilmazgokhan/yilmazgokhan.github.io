@@ -16,5 +16,5 @@ const goTop = document.getElementById("go-top");
 if (goTop) {
 	window.addEventListener("scroll", () => {
 		goTop.style.display = window.scrollY >= 300 ? "block" : "none";
-	});
+	}, { passive: true });
 }

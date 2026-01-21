@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const modal = document.getElementById("projectModal");
@@ -5,8 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalTitle = document.getElementById("modalTitle");
   const modalDescription = document.getElementById("modalDescription");
   const modalLink = document.getElementById("modalLink");
-  const closeBtn = modal.querySelector(".close");
+  const closeBtn = modal?.querySelector(".close");
   const grid = document.getElementById("portfolioGrid");
+
+  if (!modal || !grid) return;
 
   /* ---------- DATA ---------- */
   const projects = [
@@ -18,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "SAP Web-GUI",
-      description: "Private project a company",
+      description: "Private company project",
       image: "images/portfolio/sap.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
@@ -30,25 +34,25 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Bike Station Network",
-      description: "Explore amazing new countries and share your experiences",
+      description: "Explore bike stations worldwide",
       image: "images/portfolio/bike_stations_network.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
     {
       title: "Track Corona",
-      description: "The information shows in custom InfoWindow",
+      description: "Covid tracking with custom InfoWindow",
       image: "images/portfolio/track_corona.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
     {
       title: "ISS Detector",
-      description: "Track the ISS",
+      description: "Track the International Space Station",
       image: "images/portfolio/iss_detector.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
     {
       title: "Contacts",
-      description: "Backup, restore and manage contacts",
+      description: "Backup and manage contacts",
       image: "images/portfolio/contacts.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
@@ -60,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Where is my vehicle",
-      description: "Track vehicle location in real time",
+      description: "Track vehicles in real time",
       image: "images/portfolio/where_is_my_car.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
@@ -72,50 +76,63 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-  /* ---------- FUNCTIONS ---------- */
+  /* ---------- MODAL ---------- */
   function openModal(project) {
     modalImage.src = project.image;
     modalImage.alt = project.title;
+
     modalTitle.textContent = project.title;
     modalDescription.textContent = project.description;
     modalLink.href = project.link;
 
-    modal.classList.add("active");
-    document.body.style.overflow = "hidden"; // 🔥 scroll lock
+    modalImage.onload = () => {
+      modal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    };
   }
 
   function closeModal() {
     modal.classList.remove("active");
-    document.body.style.overflow = ""; // 🔥 scroll unlock
+    document.body.style.overflow = "";
   }
 
-  /* ---------- GRID RENDER ---------- */
-  projects.forEach(project => {
-    const item = document.createElement("div");
-    item.className = "portfolio-item";
+  /* ---------- RENDER ---------- */
+  function renderPortfolio() {
+    const fragment = document.createDocumentFragment();
 
-    item.innerHTML = `
-      <div class="portfolio-card">
-        <div class="portfolio-image">
-          <img src="${project.image}" alt="${project.title}">
+    projects.forEach(project => {
+      const item = document.createElement("div");
+      item.className = "portfolio-item";
+
+      item.innerHTML = `
+        <div class="portfolio-card">
+          <div class="portfolio-image">
+            <img src="${project.image}" alt="${project.title}" loading="lazy">
+          </div>
+          <h4>${project.title}</h4>
         </div>
-        <h4>${project.title}</h4>
-      </div>
-    `;
+      `;
 
-    item.addEventListener("click", () => openModal(project));
-    grid.appendChild(item);
-  });
+      item.addEventListener("click", () => openModal(project));
+      fragment.appendChild(item);
+    });
+
+    grid.appendChild(fragment);
+  }
 
   /* ---------- EVENTS ---------- */
-  closeBtn.addEventListener("click", closeModal);
+  closeBtn?.addEventListener("click", closeModal);
 
   modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal(); // overlay click
+    if (e.target === modal) closeModal();
   });
+
+  modal.querySelector(".modal-content")
+    ?.addEventListener("click", e => e.stopPropagation());
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeModal(); // ESC close
+    if (e.key === "Escape") closeModal();
   });
 
+  renderPortfolio();
 });
