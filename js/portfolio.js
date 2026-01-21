@@ -1,14 +1,14 @@
-function openModal(project) {
-  document.getElementById("modalImage").src = project.image;
-  document.getElementById("modalTitle").innerText = project.title;
-  document.getElementById("modalDescription").innerText = project.description;
-  document.getElementById("modalLink").href = project.link;
-
-  document.getElementById("projectModal").classList.add("active");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
 
+  const modal = document.getElementById("projectModal");
+  const modalImage = document.getElementById("modalImage");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDescription = document.getElementById("modalDescription");
+  const modalLink = document.getElementById("modalLink");
+  const closeBtn = modal.querySelector(".close");
+  const grid = document.getElementById("portfolioGrid");
+
+  /* ---------- DATA ---------- */
   const projects = [
     {
       title: "Image of Day",
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Bike Station Network",
-      description: "Explore amazing new countries and share your experiences with your friends",
+      description: "Explore amazing new countries and share your experiences",
       image: "images/portfolio/bike_stations_network.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
@@ -48,51 +48,74 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Contacts",
-      description: "Contacts App helps you to backup, restore and save all your precious contacts",
+      description: "Backup, restore and manage contacts",
       image: "images/portfolio/contacts.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
     {
       title: "Series Tracker",
-      description: "Users can find all theirs favourite TV shows and add them to their own library",
+      description: "Track your favourite TV shows",
       image: "images/portfolio/series_tracker.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
     {
       title: "Where is my vehicle",
-      description: "Track all your vehicles location in real time",
+      description: "Track vehicle location in real time",
       image: "images/portfolio/where_is_my_car.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     },
     {
-      title: "Kelime Hafizam",
-      description: ".",
+      title: "Kelime Hafızam",
+      description: "Vocabulary training app",
       image: "images/portfolio/kelime_hafizam.png",
       link: "https://appgallery.huawei.com/app/C104856517"
     }
   ];
 
-  const grid = document.getElementById("portfolioGrid");
+  /* ---------- FUNCTIONS ---------- */
+  function openModal(project) {
+    modalImage.src = project.image;
+    modalImage.alt = project.title;
+    modalTitle.textContent = project.title;
+    modalDescription.textContent = project.description;
+    modalLink.href = project.link;
 
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden"; // 🔥 scroll lock
+  }
+
+  function closeModal() {
+    modal.classList.remove("active");
+    document.body.style.overflow = ""; // 🔥 scroll unlock
+  }
+
+  /* ---------- GRID RENDER ---------- */
   projects.forEach(project => {
     const item = document.createElement("div");
     item.className = "portfolio-item";
 
     item.innerHTML = `
-  <div class="portfolio-card">
-    <div class="portfolio-image">
-      <img src="${project.image}" alt="${project.title}">
-    </div>
-    <h4>${project.title}</h4>
-  </div>
-  `;
+      <div class="portfolio-card">
+        <div class="portfolio-image">
+          <img src="${project.image}" alt="${project.title}">
+        </div>
+        <h4>${project.title}</h4>
+      </div>
+    `;
 
     item.addEventListener("click", () => openModal(project));
     grid.appendChild(item);
   });
 
-  document.querySelector(".close").onclick = () => {
-    document.getElementById("projectModal").classList.remove("active");
-  };
+  /* ---------- EVENTS ---------- */
+  closeBtn.addEventListener("click", closeModal);
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal(); // overlay click
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal(); // ESC close
+  });
 
 });
