@@ -1,3 +1,12 @@
+function openModal(project) {
+  document.getElementById("modalImage").src = project.image;
+  document.getElementById("modalTitle").innerText = project.title;
+  document.getElementById("modalDescription").innerText = project.description;
+  document.getElementById("modalLink").href = project.link;
+
+  document.getElementById("projectModal").classList.add("active");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const projects = [
@@ -70,22 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
     item.className = "portfolio-item";
 
     item.innerHTML = `
-      <img src="${project.image}" alt="${project.title}" />
-      <h4>${project.title}</h4>
-    `;
+  <div class="portfolio-card">
+    <div class="portfolio-image">
+      <img src="${project.image}" alt="${project.title}">
+    </div>
+    <h4>${project.title}</h4>
+  </div>
+  `;
 
     item.addEventListener("click", () => openModal(project));
     grid.appendChild(item);
   });
-
-  function openModal(project) {
-    document.getElementById("modalImage").src = project.image;
-    document.getElementById("modalTitle").innerText = project.title;
-    document.getElementById("modalDescription").innerText = project.description;
-    document.getElementById("modalLink").href = project.link;
-
-    document.getElementById("projectModal").classList.add("active");
-  }
 
   document.querySelector(".close").onclick = () => {
     document.getElementById("projectModal").classList.remove("active");
