@@ -1,0 +1,145 @@
+/* ==================================================
+   Centered Single Column Timeline (FINAL)
+   ================================================== */
+
+#resume .resume-timeline {
+    max-width: 720px;
+    margin: 5rem auto 0;
+}
+
+.timeline-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Vertical line */
+.timeline-wrap::before {
+    content: "";
+    position: absolute;
+    top: 1.6rem;
+    bottom: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: rgba(0, 0, 0, 0.12);
+    z-index: 0;
+}
+
+/* Timeline card */
+.timeline-block {
+    position: relative;
+    z-index: 1;
+
+    width: 600px;
+    text-align: center;
+
+    padding: 4.2rem 3.6rem 3.6rem;
+    margin: 0 auto 3.2rem;
+
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        opacity 0.4s ease;
+
+    opacity: 0;
+    transform: translateY(12px) scale(1);
+}
+
+/* Icon */
+.timeline-ico {
+    position: absolute;
+    top: -1.9rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+
+    background: var(--color-accent);
+    color: #fff;
+
+    display: grid;
+    place-items: center;
+    font-size: 1.6rem;
+
+    transition: transform 0.25s ease;
+}
+
+/* Header */
+.timeline-header {
+    margin-bottom: 0.8rem;
+}
+
+.timeline-header h3 {
+    margin-bottom: 0.4rem;
+}
+
+.timeline-header p {
+    font-size: 1.3rem;
+    color: #999;
+    margin: 0;
+}
+
+/* Content */
+.timeline-content h4 {
+    margin-bottom: 0.4rem;
+}
+
+.timeline-content p {
+    margin: 0;
+}
+
+/* Education card subtle distinction */
+.timeline-block.education {
+    border-top: 3px solid var(--color-accent);
+}
+
+.timeline-block .fa-graduation-cap {
+    font-size: 1.3rem;
+}
+
+/* Resume heading */
+#resume h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* Hover interaction (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+    .timeline-block:hover {
+        transform: translateY(-10px) scale(1.015);
+        box-shadow: 0 22px 55px rgba(0, 0, 0, 0.14);
+    }
+
+    .timeline-block:hover .timeline-ico {
+        transform: translateX(-50%) scale(1.15);
+    }
+}
+
+/* Fade-in on scroll */
+.timeline-block.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .timeline-block {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .timeline-ico {
+        width: 3.4rem;
+        height: 3.4rem;
+        font-size: 1.5rem;
+        top: -1.7rem;
+    }
+}

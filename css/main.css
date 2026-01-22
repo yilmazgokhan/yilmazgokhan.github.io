@@ -768,120 +768,11 @@ header .row {
   }
 }
 
-
 /* ==================================================
-   Resume
+   Resume (section wrapper)
    ================================================== */
 #resume {
   padding-block: clamp(8rem, 10vw, 12rem);
-}
-
-/* Header */
-#resume .resume-header {
-  text-align: center;
-}
-
-#resume .resume-header h2 {
-  color: var(--color-accent);
-}
-
-/* Timeline wrapper */
-#resume .resume-timeline {
-  max-width: 1000px;
-  margin-inline: auto;
-}
-
-/* Timeline list */
-.timeline-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  position: relative;
-  margin-top: 4rem;
-}
-
-/* Timeline vertical line */
-.timeline-wrap::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: rgba(0, 0, 0, 0.1);
-  transform: translateX(-50%);
-}
-
-/* Timeline block */
-.timeline-block {
-  display: grid;
-  grid-template-columns: 1fr 40px 1fr;
-  align-items: start;
-  gap: 3rem;
-  position: relative;
-}
-
-/* Icon */
-.timeline-ico {
-  grid-column: 2;
-  width: 4.8rem;
-  height: 4.8rem;
-  border-radius: 50%;
-  background: #313131;
-  color: #fff;
-
-  display: grid;
-  place-items: center;
-  z-index: 1;
-}
-
-/* Header (left) */
-.timeline-header {
-  text-align: right;
-}
-
-.timeline-header h3 {
-  margin-bottom: 0.4rem;
-}
-
-.timeline-header p {
-  font-family: var(--font-body);
-  font-size: 1.4rem;
-  color: #888;
-}
-
-/* Content (right) */
-.timeline-content h4 {
-  margin-bottom: 1rem;
-}
-
-.timeline-content p {
-  margin: 0;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .timeline-wrap::before {
-    left: 20px;
-  }
-
-  .timeline-block {
-    grid-template-columns: 40px 1fr;
-    gap: 2rem;
-  }
-
-  .timeline-ico {
-    grid-column: 1;
-  }
-
-  .timeline-header {
-    grid-column: 2;
-    text-align: left;
-  }
-
-  .timeline-content {
-    grid-column: 2;
-  }
 }
 
 /* ==================================================
@@ -1038,52 +929,93 @@ header .row {
 /* ================================
    Contact
    ================================ */
+/* ================================
+   Contact
+================================ */
 #contact {
   background: #151515;
-  padding: 10rem 0;
+  padding: 12rem 0 14rem;
   color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 #contact .section-intro {
-  text-align: center;
   margin-bottom: 4rem;
-}
-
-#contact .section-intro h1 {
-  color: #ffffff;
 }
 
 #contact .section-intro h5 {
   color: var(--color-accent);
 }
 
+#contact .section-intro h1 {
+  color: #ffffff;
+}
+
 .contact-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 4rem;
-  max-width: 800px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 5rem;
+
+  max-width: 720px;
+  margin: 4rem auto 0;
   text-align: center;
 }
 
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+
+  transition: background 0.25s ease;
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
 .contact-info .icon {
-  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.8rem;
 }
 
 .contact-info .icon i {
-  font-size: 3.6rem;
+  font-size: 4rem;
   color: var(--color-accent);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.contact-item:hover .icon i {
+  transform: translateY(-4px);
+  color: #ffffff;
 }
 
 .contact-info h5 {
-  margin-bottom: 0.6rem;
-  color: var(--color-accent);
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
 }
 
 .contact-info p {
-  color: rgba(255, 255, 255, 0.75);
-  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 9rem 0;
+  }
+
+  .contact-info {
+    gap: 3.2rem;
+  }
+}
+
 
 /* ===================================================================
    Footer
