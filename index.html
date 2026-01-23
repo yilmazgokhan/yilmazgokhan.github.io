@@ -68,6 +68,7 @@
 	<link rel="stylesheet" href="css/sections/about.css">
 	<link rel="stylesheet" href="css/sections/resume.css">
 	<link rel="stylesheet" href="css/sections/portfolio.css">
+	<link rel="stylesheet" href="css/sections/articles.css">
 	<link rel="stylesheet" href="css/sections/contact.css">
 	<link rel="stylesheet" href="css/sections/footer.css">
 
@@ -160,13 +161,22 @@
 
 			<div class="about-text">
 				<p class="lead">
-					I'm a native Android developer working with Java & Kotlin.
-					Currently employed as a Software Engineer at ICterra.
+					I’m a native Android developer specializing in Java and Kotlin,
+					with a strong focus on building reliable and scalable mobile applications.
+					Currently, I work as a Software Engineer at ICterra.
 				</p>
 
 				<p>
-					I enjoy building mobile products, exploring new technologies
-					and developing backend REST APIs.
+					I enjoy working on the full lifecycle of a product — from architecture
+					and clean code practices to performance and user experience.
+					I also like staying close to backend systems and designing REST APIs
+					that integrate smoothly with mobile clients.
+				</p>
+
+				<p>
+					Outside of day-to-day development, I write technical articles on Medium,
+					sharing practical knowledge from real-world projects and exploring
+					new technologies in the Android ecosystem.
 				</p>
 			</div>
 
@@ -225,33 +235,31 @@
 	</section>
 
 	<!-- ==================================================
-	     Articles / Medium Section
+     Articles Section
 	================================================== -->
-	<section id="cta" class="grey-section">
+	<section id="articles" class="grey-section">
 
 		<div class="row section-intro">
 			<div class="col-twelve">
 				<h5>Articles</h5>
-				<h1>Medium Posts</h1>
+				<h1>Things I write about software.</h1>
 			</div>
 		</div>
 
-		<div class="row cta-content">
-			<div id="medium-widget"></div>
-			<script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-			<script>
-				MediumWidget.Init({
-					renderTo: '#medium-widget',
-					params: {
-						resource: 'https://medium.com/@yilmazgokhan',
-						postsPerLine: 2,
-						limit: 10,
-						picture: 'big',
-						fields: ['description', 'author', 'publishAt'],
-						ratio: 'original'
-					}
-				});
-			</script>
+		<div class="row">
+			<div class="col-twelve">
+
+				<div class="articles-list" id="articlesList">
+					<!-- Articles injected by articles.js -->
+				</div>
+
+				<div class="articles-footer">
+					<a href="https://medium.com/@yilmazgokhan" target="_blank" rel="noopener" class="btn btn--outline">
+						View all on Medium
+					</a>
+				</div>
+
+			</div>
 		</div>
 
 	</section>
@@ -330,6 +338,7 @@
 	<script src="js/main.js"></script>
 	<script src="js/portfolio.js"></script>
 	<script src="js/resume.js"></script>
+	<script src="js/articles.js"></script>
 
 	<!-- ==================================================
 	     Portfolio Modal

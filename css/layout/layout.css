@@ -65,27 +65,3 @@ header .row {
     display: flex;
     align-items: center;
 }
-
-/* ==================================================
-   Call To Action (shared layout)
-   ================================================== */
-#cta {
-    padding: 10rem 0;
-    text-align: center;
-}
-
-#cta p.lead {
-    color: #6e6e6e;
-}
-
-.cta-content {
-    max-width: 640px;
-    margin-inline: auto;
-}
-
-/* CTA responsive tweaks */
-@media (max-width: 650px) {
-    .cta-content h1 {
-        font-size: 2.4rem;
-    }
-}

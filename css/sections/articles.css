@@ -1,0 +1,107 @@
+/* ==================================================
+   Articles Section
+   ================================================== */
+
+#articles {
+    padding: 10rem 0;
+}
+
+@media (max-width: 600px) {
+    #articles {
+        padding: 7rem 0;
+    }
+}
+
+/* ==================================================
+   Articles list
+   ================================================== */
+.articles-list {
+    max-width: 720px;
+    margin: 0 auto 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+/* ==================================================
+   Article card
+   ================================================== */
+.article-item {
+    background: #ffffff;
+    padding: 3rem 3.2rem;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.article-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.14);
+}
+
+/* ==================================================
+   Featured article
+   ================================================== */
+.article-featured {
+    background: #ffffff;
+
+    border-left: 3px solid var(--color-accent);
+    padding: 3.6rem 3.6rem;
+
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.08);
+}
+
+.article-featured .article-title {
+    font-size: 2.1rem;
+}
+
+.article-featured .article-description {
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+
+/* ==================================================
+   Article content
+   ================================================== */
+.article-title {
+    margin-bottom: 0.6rem;
+}
+
+.article-title a {
+    color: var(--color-heading);
+    transition: color 0.25s ease;
+}
+
+.article-title a:hover {
+    color: var(--color-accent);
+}
+
+.article-description {
+    margin-bottom: 1.2rem;
+    color: #666;
+}
+
+.article-meta {
+    font-size: 1.3rem;
+    color: #999;
+}
+
+/* ==================================================
+   Articles footer
+   ================================================== */
+.articles-footer {
+    text-align: center;
+}
+
+/* ==================================================
+   Articles – Button override
+   ================================================== */
+#articles .btn--outline:hover,
+#articles .btn--outline:focus {
+    background: #ffffff;
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}

@@ -22,7 +22,7 @@
 
   max-width: 900px;
   margin-inline: auto;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /* ==================================================
