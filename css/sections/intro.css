@@ -1,0 +1,134 @@
+/* ==================================================
+   Intro / Hero Section
+   ==================================================
+   Landing hero, headline and social links
+*/
+
+/* ==================================================
+   Section wrapper
+   ================================================== */
+#intro {
+    position: relative;
+    min-height: 100vh;
+
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+    background: url("../../images/intro-bg.jpg") center / cover no-repeat;
+}
+
+/* ==================================================
+   Background overlay
+   ================================================== */
+.intro-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 17, 17, 0.85);
+}
+
+/* ==================================================
+   Content container
+   ================================================== */
+.intro-content {
+    position: relative;
+    z-index: 1;
+    padding-inline: 2rem;
+}
+
+/* ==================================================
+   Subtitle
+   ================================================== */
+.intro-content h5 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.8rem;
+}
+
+/* ==================================================
+   Main title
+   ================================================== */
+.intro-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(3.6rem, 6vw, 7.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+
+    color: #ffffff;
+    max-width: 90rem;
+    margin-inline: auto;
+    margin-bottom: 1.2rem;
+}
+
+/* ==================================================
+   Role / position text
+   ================================================== */
+.intro-position {
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2.4rem;
+}
+
+.intro-position span:not(:last-child)::after {
+    content: " | ";
+    opacity: 0.4;
+}
+
+/* ==================================================
+   Call to action button
+   ================================================== */
+.intro-content .btn {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.intro-content .btn:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #ffffff;
+}
+
+/* ==================================================
+   Social links
+   ================================================== */
+.intro-social {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    font-size: 2.6rem;
+    z-index: 1;
+}
+
+/* List item safety reset */
+.intro-social li {
+    list-style: none;
+}
+
+/* Icon links */
+.intro-social a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.intro-social a:hover {
+    color: var(--color-accent);
+}

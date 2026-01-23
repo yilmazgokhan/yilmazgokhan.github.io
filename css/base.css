@@ -1,85 +1,49 @@
-/* =========================
+/* ==================================================
    Modern Base Reset
-========================= */
+   Purpose:
+   - Normalize browser inconsistencies
+   - Provide a clean foundation for layout & typography
+   ================================================== */
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 10px;
-	-webkit-text-size-adjust: 100%;
-}
-
-body {
-	margin: 0;
-}
-
-/* Media */
-img,
-picture,
-video,
-canvas,
-svg {
-	display: block;
-	max-width: 100%;
-}
-
-/* Typography reset */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-figure,
-blockquote,
-dl,
-dd {
-	margin: 0;
-}
-
-/* Forms */
-input,
-button,
-textarea,
-select {
-	font: inherit;
-}
-
-/* Links */
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-/** 
- * ===================================================================
- * Base setup (modernized)
- * ===================================================================
- */
-
+/* --------------------------------------------------
+   Root setup
+   - 62.5% for easy rem calculation (1rem = 10px)
+   - Initialize box-sizing inheritance
+-------------------------------------------------- */
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
 }
 
+/* --------------------------------------------------
+   Global box-sizing inheritance
+   - All elements inherit box-sizing from html
+-------------------------------------------------- */
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
 }
 
+/* --------------------------------------------------
+   Body base reset
+   - Remove default margin
+   - Establish readable default line-height
+   - Improve mobile scrolling behavior
+-------------------------------------------------- */
 body {
+	margin: 0;
 	font-weight: 400;
 	line-height: 1.6;
 	word-wrap: break-word;
 	-webkit-overflow-scrolling: touch;
 }
 
+/* --------------------------------------------------
+   Font smoothing
+   - Improves text rendering on macOS & iOS
+-------------------------------------------------- */
 body,
 input,
 button {
@@ -87,18 +51,24 @@ button {
 	-webkit-font-smoothing: antialiased;
 }
 
-/* Media */
+/* ==================================================
+   Media reset
+   - Ensure responsive media behavior
+-------------------------------------------------- */
 img,
-video {
+picture,
+video,
+canvas,
+svg {
+	display: block;
 	max-width: 100%;
 	height: auto;
-	display: block;
 }
 
-/**
- * Typography reset (clean & modern)
- * -------------------------------------------------------------------
- */
+/* ==================================================
+   Typography reset
+   - Remove browser default margins & paddings
+-------------------------------------------------- */
 div,
 dl,
 dt,
@@ -121,7 +91,10 @@ td {
 	padding: 0;
 }
 
-/* Headings – base reset only */
+/* --------------------------------------------------
+   Headings reset
+   - Font weight & line-height controlled in main.css
+-------------------------------------------------- */
 h1,
 h2,
 h3,
@@ -132,7 +105,9 @@ h6 {
 	line-height: inherit;
 }
 
-/* Inline text */
+/* --------------------------------------------------
+   Inline text helpers
+-------------------------------------------------- */
 em,
 i {
 	font-style: italic;
@@ -148,20 +123,13 @@ small {
 	line-height: inherit;
 }
 
-/* Lists → reset only spacing, NOT style */
-ul,
-ol {
-	margin: 0;
-	padding: 0;
-}
-
-/**
- * Links
- * -------------------------------------------------------------------
- */
+/* ==================================================
+   Links reset
+   - Visual styling handled in section/main styles
+-------------------------------------------------- */
 a {
-	text-decoration: none;
 	color: inherit;
+	text-decoration: none;
 }
 
 a img {
@@ -169,10 +137,22 @@ a img {
 	border: none;
 }
 
-/**
- * Inputs – base reset (modern)
- * -------------------------------------------------------------------
- */
+/* ==================================================
+   Lists reset
+   - Reset spacing only
+   - list-style intentionally preserved
+-------------------------------------------------- */
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+/* ==================================================
+   Forms reset
+   - Modern input behavior
+   - iOS appearance fixes
+-------------------------------------------------- */
 fieldset {
 	margin: 0;
 	padding: 0;
@@ -190,18 +170,17 @@ textarea {
 	appearance: none;
 	-webkit-appearance: none;
 	border-radius: 0;
-	/* iOS fix */
 }
 
+/* Allow user-controlled vertical resize */
 textarea {
 	resize: vertical;
-	/* kullanıcı kontrolü */
 }
 
-/**
- * Grid – legacy compatible (safe refactor)
- * -------------------------------------------------------------------
- */
+/* ==================================================
+   Grid system (legacy compatible)
+   - Modernized without breaking existing templates
+-------------------------------------------------- */
 .row {
 	width: 100%;
 	max-width: 1140px;
@@ -210,23 +189,26 @@ textarea {
 	flex-wrap: wrap;
 }
 
+/* Remove legacy clearfix need */
 .row::before,
 .row::after {
 	display: none;
 }
 
-/* Nested rows */
+/* Nested row alignment fix */
 .row .row {
 	margin-inline: -1.5rem;
 }
 
-/* Columns */
+/* Column padding */
 [class*="col-"],
 .bgrid {
 	padding-inline: 1.5rem;
 }
 
-/* Width system */
+/* --------------------------------------------------
+   Column width system
+-------------------------------------------------- */
 .col-one {
 	width: 8.3333%;
 }
@@ -283,22 +265,17 @@ textarea {
 	width: 100%;
 }
 
-/* Mobile fix */
+/* Mobile: force single-column layout */
 @media (max-width: 768px) {
 	[class*="col-"] {
 		width: 100%;
 	}
 }
 
-/* Utility helpers (clean) */
-.hide {
-	display: none;
-}
-
-.invisible {
-	visibility: hidden;
-}
-
+/* ==================================================
+   Utility helpers
+   - Global, low-risk helper classes
+-------------------------------------------------- */
 .antialiased {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -306,25 +283,4 @@ textarea {
 
 .no-border {
 	border: none;
-}
-
-.full-width {
-	width: 100%;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.text-left {
-	text-align: left;
-}
-
-.text-right {
-	text-align: right;
-}
-
-.align-center {
-	margin-inline: auto;
-	text-align: center;
 }

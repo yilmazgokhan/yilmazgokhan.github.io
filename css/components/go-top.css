@@ -1,0 +1,42 @@
+/* ==================================================
+   Go To Top Button
+   ================================================== */
+
+/* Wrapper */
+#go-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  display: none;
+}
+
+/* Button */
+#go-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  background: #cc005f;
+  color: #ffffff;
+
+  border-radius: 50%;
+  text-decoration: none;
+
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover state */
+#go-top a:hover {
+  background: #000000;
+  transform: translateY(-4px);
+}
+
+/* Icon */
+#go-top i {
+  font-size: 1.8rem;
+  line-height: 1;
+}

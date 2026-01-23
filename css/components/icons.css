@@ -1,0 +1,13 @@
+/* ==================================================
+   Icons
+   ================================================== */
+
+/* Base icon */
+.icon i {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* Hover state */
+.icon:hover i {
+  transform: translateY(-4px);
+}

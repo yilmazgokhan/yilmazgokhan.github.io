@@ -1,0 +1,48 @@
+/* ==================================================
+   Utilities
+   ==================================================
+   Small, reusable helper classes
+   No layout or section-specific styles
+   Use sparingly and intentionally
+*/
+
+/* ==================================================
+   Visibility
+   ================================================== */
+.hide {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+/* ==================================================
+   Width helpers
+   ================================================== */
+.full-width {
+  width: 100% !important;
+}
+
+/* ==================================================
+   Text alignment
+   ================================================== */
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/* ==================================================
+   Alignment helpers
+   ================================================== */
+.align-center {
+  margin-inline: auto !important;
+  text-align: center;
+}

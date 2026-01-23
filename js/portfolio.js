@@ -1,7 +1,17 @@
 "use strict";
 
+/* ==================================================
+   Portfolio Module
+   Purpose:
+   - Render portfolio items dynamically
+   - Handle modal open / close interactions
+   ================================================== */
+
 document.addEventListener("DOMContentLoaded", () => {
 
+  /* ==================================================
+     DOM References
+  -------------------------------------------------- */
   const modal = document.getElementById("projectModal");
   const modalImage = document.getElementById("modalImage");
   const modalTitle = document.getElementById("modalTitle");
@@ -12,7 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!modal || !grid) return;
 
-  /* ---------- DATA ---------- */
+
+  /* ==================================================
+     Portfolio Data
+     - Single source of truth for portfolio content
+  -------------------------------------------------- */
   const projects = [
     {
       title: "Image of Day",
@@ -76,7 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-  /* ---------- MODAL ---------- */
+
+  /* ==================================================
+     Modal Control
+  -------------------------------------------------- */
   function openModal(project) {
     modalImage.src = project.image;
     modalImage.alt = project.title;
@@ -96,7 +113,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.overflow = "";
   }
 
-  /* ---------- RENDER ---------- */
+
+  /* ==================================================
+     Portfolio Rendering
+  -------------------------------------------------- */
   function renderPortfolio() {
     const fragment = document.createDocumentFragment();
 
@@ -105,13 +125,16 @@ document.addEventListener("DOMContentLoaded", () => {
       item.className = "portfolio-item";
 
       item.innerHTML = `
-        <div class="portfolio-card">
-          <div class="portfolio-image">
-            <img src="${project.image}" alt="${project.title}" loading="lazy">
-          </div>
-          <h4>${project.title}</h4>
-        </div>
-      `;
+				<div class="portfolio-card">
+					<div class="portfolio-image">
+						<img 
+							src="${project.image}" 
+							alt="${project.title}" 
+							loading="lazy">
+					</div>
+					<h4>${project.title}</h4>
+				</div>
+			`;
 
       item.addEventListener("click", () => openModal(project));
       fragment.appendChild(item);
@@ -120,19 +143,28 @@ document.addEventListener("DOMContentLoaded", () => {
     grid.appendChild(fragment);
   }
 
-  /* ---------- EVENTS ---------- */
+
+  /* ==================================================
+     Event Bindings
+  -------------------------------------------------- */
   closeBtn?.addEventListener("click", closeModal);
 
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal();
+  modal.addEventListener("click", event => {
+    if (event.target === modal) closeModal();
   });
 
-  modal.querySelector(".modal-content")
-    ?.addEventListener("click", e => e.stopPropagation());
+  modal
+    .querySelector(".modal-content")
+    ?.addEventListener("click", event => event.stopPropagation());
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeModal();
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeModal();
   });
 
+
+  /* ==================================================
+     Init
+  -------------------------------------------------- */
   renderPortfolio();
+
 });

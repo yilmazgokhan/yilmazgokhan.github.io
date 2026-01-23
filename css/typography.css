@@ -1,0 +1,303 @@
+/* ==================================================
+   Typography
+   Purpose:
+   - Define global text & heading styles
+   - Handle readable content defaults
+   - Keep section-specific overrides out of this file
+   ================================================== */
+
+
+/* ==================================================
+   Headings
+   - Global heading hierarchy
+-------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h01,
+.h02,
+.h03,
+.h04,
+.h05,
+.h06 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-bottom: 2.1rem;
+}
+
+/* Mid-level headings spacing */
+h3,
+.h03,
+h4,
+.h04 {
+    margin-bottom: 1.8rem;
+}
+
+/* Small headings emphasis */
+h5,
+.h05,
+h6,
+.h06 {
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+/* --------------------------------------------------
+   Heading sizes
+-------------------------------------------------- */
+h1,
+.h01 {
+    font-size: 3.1rem;
+    line-height: 1.355;
+    letter-spacing: -0.1rem;
+}
+
+@media (max-width: 600px) {
+
+    h1,
+    .h01 {
+        font-size: 2.6rem;
+        letter-spacing: -0.07rem;
+    }
+}
+
+h2,
+.h02 {
+    font-size: 2.4rem;
+    line-height: 1.25;
+}
+
+h3,
+.h03 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+h4,
+.h04 {
+    font-size: 1.7rem;
+    line-height: 1.765;
+}
+
+/* Uppercase heading styles */
+h5,
+.h05,
+h6,
+.h06 {
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+h5,
+.h05 {
+    font-size: 1.4rem;
+    line-height: 1.714;
+}
+
+h6,
+.h06 {
+    font-size: 1.3rem;
+    line-height: 1.846;
+}
+
+
+/* ==================================================
+   Text & content
+-------------------------------------------------- */
+p img {
+    margin: 0;
+}
+
+/* Lead paragraph */
+p.lead {
+    font-family: var(--font-body);
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    p.lead {
+        font-size: 1.7rem;
+    }
+}
+
+/* Inline emphasis */
+em,
+i {
+    font-style: italic;
+}
+
+strong,
+b {
+    font-weight: 600;
+}
+
+small {
+    font-size: 1.2rem;
+}
+
+
+/* ==================================================
+   Blockquote
+-------------------------------------------------- */
+blockquote {
+    margin: 3rem 0;
+    padding-left: 3rem;
+    border-left: 4px solid var(--color-accent);
+}
+
+blockquote p {
+    font-style: italic;
+    font-size: 1.9rem;
+    line-height: 1.7;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #888;
+}
+
+blockquote cite::before {
+    content: "— ";
+}
+
+
+/* ==================================================
+   Inline semantics
+-------------------------------------------------- */
+abbr {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-variant: small-caps;
+    letter-spacing: 0.05rem;
+    color: #888;
+    cursor: help;
+}
+
+code,
+pre,
+kbd,
+samp {
+    font-family: Consolas, Menlo, Monaco, monospace;
+}
+
+pre {
+    padding: 2.4rem 3rem;
+    background: #f1f1f1;
+    overflow-x: auto;
+}
+
+code {
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+pre>code {
+    display: block;
+    padding: 0;
+    background: none;
+}
+
+mark {
+    background: #fff49b;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d2d2d2;
+    margin: 2.4rem 0;
+}
+
+
+/* ==================================================
+   Lists
+-------------------------------------------------- */
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: disc;
+}
+
+li {
+    display: list-item;
+}
+
+ol,
+ul {
+    margin-left: 1.7rem;
+}
+
+ul li {
+    padding-left: 0.4rem;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 0.6rem 0 0.6rem 1.7rem;
+}
+
+dt {
+    margin: 0;
+    color: var(--color-accent);
+}
+
+dd {
+    margin: 0 0 0 2rem;
+}
+
+
+/* ==================================================
+   Tables
+-------------------------------------------------- */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-body);
+}
+
+th,
+td {
+    padding: 1.5rem 3rem;
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+th {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-heading);
+}
+
+td {
+    line-height: 1.5;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+/* Responsive tables */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

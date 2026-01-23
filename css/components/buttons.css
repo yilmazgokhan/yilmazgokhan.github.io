@@ -1,0 +1,65 @@
+/* ==================================================
+   Buttons
+   ================================================== */
+
+/* Base button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 5.2rem;
+    padding: 0 3rem;
+
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+
+    color: #313131;
+    background: #d8d8d8;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover & focus */
+.btn:hover,
+.btn:focus {
+    background: #bebebe;
+    color: #000;
+    outline: none;
+}
+
+/* Primary variant */
+.btn--primary {
+    background: #313131;
+    color: #ffffff;
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+    background: #1f1f1f;
+}
+
+/* Outline variant */
+.btn--outline {
+    background: transparent;
+    border: 2px solid #313131;
+    color: #313131;
+}
+
+.btn--outline:hover,
+.btn--outline:focus {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* Full-width modifier */
+.btn--block {
+    width: 100%;
+}

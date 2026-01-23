@@ -1,0 +1,101 @@
+/* ==================================================
+   Footer
+   ==================================================
+   Global site footer and social links
+*/
+
+/* ==================================================
+   Footer wrapper
+   ================================================== */
+footer {
+    padding-bottom: 3rem;
+    font-size: 1.4rem;
+    font-family: var(--font-body);
+    color: #ffffff;
+}
+
+/* ==================================================
+   Inner layout
+   ================================================== */
+.footer-inner {
+    max-width: 900px;
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+/* ==================================================
+   Links
+   ================================================== */
+footer a {
+    color: #ffffff;
+    transition: color 0.25s ease;
+}
+
+footer a:hover {
+    color: var(--color-accent);
+}
+
+/* ==================================================
+   Social icons
+   ================================================== */
+.footer-social {
+    display: flex;
+    gap: 1.6rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social i {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.footer-social a {
+    width: 3.6rem;
+    height: 3.6rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.footer-social a:hover {
+    transform: translateY(-3px);
+    color: var(--color-accent);
+}
+
+/* ==================================================
+   Copyright
+   ================================================== */
+.copyright {
+    text-align: right;
+    opacity: 0.6;
+}
+
+/* ==================================================
+   Responsive adjustments
+   ================================================== */
+@media (max-width: 768px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}

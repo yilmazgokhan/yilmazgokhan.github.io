@@ -1,0 +1,67 @@
+/* ==================================================
+   About Section
+   ==================================================
+   Personal introduction and profile layout
+*/
+
+/* ==================================================
+   Section wrapper
+   ================================================== */
+#about {
+  background: #ffffff;
+  padding-block: clamp(8rem, 10vw, 12rem);
+}
+
+/* ==================================================
+   Layout
+   ================================================== */
+.about-content {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 4rem;
+
+  max-width: 900px;
+  margin-inline: auto;
+  align-items: center;
+}
+
+/* ==================================================
+   Avatar
+   ================================================== */
+.about-avatar {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ==================================================
+   Text content
+   ================================================== */
+.about-text p.lead {
+  max-width: 65ch;
+  color: #555;
+}
+
+/* ==================================================
+   Responsive adjustments
+   ================================================== */
+@media (max-width: 600px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    text-align: center;
+  }
+
+  .about-avatar {
+    margin-inline: auto;
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .about-text p.lead {
+    margin-inline: auto;
+  }
+}

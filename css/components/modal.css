@@ -1,0 +1,98 @@
+/* ==================================================
+   Modal
+   ================================================== */
+
+/* Overlay */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* Active state */
+.modal.active {
+    display: flex;
+}
+
+/* Modal container */
+.modal-content {
+    position: relative;
+
+    width: 90%;
+    max-width: 520px;
+    padding: 2.4rem;
+
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Media */
+.modal-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.6rem;
+}
+
+/* Title */
+.modal-content h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Text */
+.modal-content p {
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Action link */
+.modal-content a {
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+
+    background: #313131;
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    transition: background 0.3s ease;
+}
+
+.modal-content a:hover {
+    background: var(--color-accent);
+}
+
+/* Close button */
+.modal .close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Animation */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

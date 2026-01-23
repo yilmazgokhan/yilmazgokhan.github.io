@@ -1,0 +1,109 @@
+/* ==================================================
+   Contact Section
+   ==================================================
+   Contact information and communication channels
+*/
+
+/* ==================================================
+   Section wrapper
+   ================================================== */
+#contact {
+    background: #151515;
+    padding: 12rem 0 14rem;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ==================================================
+   Section intro overrides
+   ================================================== */
+#contact .section-intro {
+    margin-bottom: 4rem;
+}
+
+#contact .section-intro h5 {
+    color: var(--color-accent);
+}
+
+#contact .section-intro h1 {
+    color: #ffffff;
+}
+
+/* ==================================================
+   Grid layout
+   ================================================== */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 5rem;
+
+    max-width: 720px;
+    margin: 4rem auto 0;
+    text-align: center;
+}
+
+/* ==================================================
+   Contact item (card)
+   ================================================== */
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+
+    transition: background 0.25s ease;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* ==================================================
+   Icon
+   ================================================== */
+.contact-info .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+}
+
+.contact-info .icon i {
+    font-size: 4rem;
+    color: var(--color-accent);
+}
+
+/* Hover state handled here to keep section-specific behavior */
+.contact-item:hover .icon i {
+    color: #ffffff;
+}
+
+/* ==================================================
+   Text content
+   ================================================== */
+.contact-info h5 {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+}
+
+.contact-info p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* ==================================================
+   Responsive adjustments
+   ================================================== */
+@media (max-width: 600px) {
+    #contact {
+        padding: 9rem 0;
+    }
+
+    .contact-info {
+        gap: 3.2rem;
+    }
+}
