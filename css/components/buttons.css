@@ -55,6 +55,7 @@
 
 .btn--outline:hover,
 .btn--outline:focus {
+    background: #ffffff;
     border-color: var(--color-accent);
     color: var(--color-accent);
 }
@@ -63,3 +64,4 @@
 .btn--block {
     width: 100%;
 }
+

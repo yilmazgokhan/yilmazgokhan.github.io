@@ -68,7 +68,9 @@
 	<link rel="stylesheet" href="css/sections/about.css">
 	<link rel="stylesheet" href="css/sections/resume.css">
 	<link rel="stylesheet" href="css/sections/portfolio.css">
+	<link rel="stylesheet" href="css/sections/open-source.css">
 	<link rel="stylesheet" href="css/sections/articles.css">
+	<link rel="stylesheet" href="css/sections/certifications.css">
 	<link rel="stylesheet" href="css/sections/contact.css">
 	<link rel="stylesheet" href="css/sections/footer.css">
 
@@ -235,9 +237,31 @@
 	</section>
 
 	<!-- ==================================================
+     Open Source Section
+	================================================== -->
+	<section id="open-source" class="grey-section">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+				<h5>Open Source</h5>
+				<h1>Selected GitHub Projects.</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-twelve">
+				<div class="opensource-list" id="openSourceList">
+					<!-- Items injected by open-source.js -->
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- ==================================================
      Articles Section
 	================================================== -->
-	<section id="articles" class="grey-section">
+	<section id="articles">
 
 		<div class="row section-intro">
 			<div class="col-twelve">
@@ -257,6 +281,49 @@
 					<a href="https://medium.com/@yilmazgokhan" target="_blank" rel="noopener" class="btn btn--outline">
 						View all on Medium
 					</a>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<!-- ==================================================
+     Certifications Section
+	================================================== -->
+	<section id="certifications" class="grey-section">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+				<h5>Certifications</h5>
+				<h1>Professional Credentials.</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-twelve">
+
+				<div class="certification-item">
+
+					<h3 class="certification-title">
+						Professional Scrum Master I (PSM I)
+					</h3>
+
+					<div class="certification-meta">
+						Scrum.org · Issued April 2022 · Credential ID: 792407
+					</div>
+
+					<p class="certification-description">
+						Certified knowledge of the Scrum framework, agile principles,
+						sprint planning, and effective team collaboration in
+						software projects.
+					</p>
+
+					<a href="https://www.scrum.org/certificates/792407" target="_blank" rel="noopener"
+						class="certification-link">
+						View credential ↗
+					</a>
+
 				</div>
 
 			</div>
@@ -338,7 +405,9 @@
 	<script src="js/main.js"></script>
 	<script src="js/portfolio.js"></script>
 	<script src="js/resume.js"></script>
+	<script src="js/open-source.js"></script>
 	<script src="js/articles.js"></script>
+
 
 	<!-- ==================================================
 	     Portfolio Modal

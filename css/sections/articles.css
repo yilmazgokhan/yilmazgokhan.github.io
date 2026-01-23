@@ -3,6 +3,7 @@
    ================================================== */
 
 #articles {
+    background: #ffffff;
     padding: 10rem 0;
 }
 
@@ -94,14 +95,4 @@
    ================================================== */
 .articles-footer {
     text-align: center;
-}
-
-/* ==================================================
-   Articles – Button override
-   ================================================== */
-#articles .btn--outline:hover,
-#articles .btn--outline:focus {
-    background: #ffffff;
-    color: var(--color-accent);
-    border-color: var(--color-accent);
 }

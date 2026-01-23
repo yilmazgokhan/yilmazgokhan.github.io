@@ -25,35 +25,35 @@ document.addEventListener("DOMContentLoaded", () => {
             company: "ICterra Information and Communication Technologies",
             role: "Android Developer",
             period: "Oct 2023 - Present",
-            description: "Development of Android application",
+            description: "Developing and maintaining Android applications for Ziraat Teknoloji projects. Actively involved in feature development, bug fixing, and release processes for enterprise-level mobile applications.",
             icon: "fa-briefcase"
         },
         {
-            company: "Yapı Kredi Teknoloji",
+            company: "Yapi Kredi Teknoloji",
             role: "Software Engineer",
             period: "Aug 2023 - Oct 2023",
-            description: "Development of Android application",
+            description: "Contributed to Android bug-fix tasks for Yapi Kredi mobile applications. Gained exposure to iOS and backend projects by reviewing codebases and implementing minor improvements.",
             icon: "fa-briefcase"
         },
         {
             company: "ATP",
             role: "Software Engineer",
             period: "July 2022 - Aug 2023",
-            description: "Development of Android application",
+            description: "Worked on a banking-sector project using Jetpack Compose and Kotlin Multiplatform. Took part in feature development and bug fixing within a production environment.",
             icon: "fa-briefcase"
         },
         {
             company: "Huawei",
             role: "Software Engineer",
             period: "May 2020 - July 2022",
-            description: "Development of several Android applications as open-source",
+            description: "Developed multiple Android applications as open-source projects and built Android mediation plugins. Implemented backend APIs to support mobile clients and actively participated in Agile/Scrum processes, including sprint planning and Jira workflows.",
             icon: "fa-briefcase"
         },
         {
             company: "Ebebek",
             role: "Mobile Developer",
             period: "Oct 2019 - May 2020",
-            description: "Bug fixing and maintenance of mobile applications",
+            description: "Contributed to feature development and bug fixing for the Ebebek Android application, focusing on stability and user experience improvements.",
             icon: "fa-briefcase"
         },
         {
