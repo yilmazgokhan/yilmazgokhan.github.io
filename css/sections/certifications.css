@@ -1,112 +1,78 @@
 /* ==================================================
-   Certifications Section
+   Certifications Section – Minimal Card
 ================================================== */
 
 #certifications {
-    padding: 8rem 0;
-    background: #ebebeb;
-}
-
-@media (max-width: 600px) {
-    #certifications {
-        padding: 6rem 0;
-    }
+    padding-block: clamp(8rem, 10vw, 12rem);
 }
 
 /* ==================================================
-   List
+   Card
 ================================================== */
-.certifications-list {
+.certification-card {
     max-width: 720px;
     margin: 0 auto;
-}
 
-/* ==================================================
-   Item
-================================================== */
-.certification-item {
     display: flex;
-    gap: 2.4rem;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
 
     background: #ffffff;
-    padding: 3rem 3.2rem;
-    border-radius: 14px;
+    padding: 3.2rem 3.6rem;
+    border-radius: 16px;
 
     border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.certification-item:hover {
+.certification-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
-}
-
-/* ==================================================
-   Icon
-================================================== */
-.certification-icon {
-    font-size: 2.6rem;
-    color: var(--color-accent);
-
-    flex-shrink: 0;
-    line-height: 1;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12);
 }
 
 /* ==================================================
    Content
 ================================================== */
-.certification-content h3 {
-    font-size: 1.9rem;
+.certification-title {
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.6rem;
 }
 
-.certification-content .certification-meta {
+.certification-meta {
     font-size: 1.3rem;
-    color: #888;
-    margin-bottom: 1.2rem;
+    color: #999;
+    margin-bottom: 1.4rem;
 }
 
-.certification-content p {
-    color: #666;
-    line-height: 1.6;
+.certification-description {
+    font-size: 1.45rem;
+    line-height: 1.7;
+    color: #555;
     max-width: 60ch;
 }
 
-/* Link-style CTA */
-.certification-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-
-    margin-top: 1.4rem;
-
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.12rem;
-
-    color: var(--color-accent);
-}
-
-.certification-link:hover {
-    text-decoration: underline;
+/* ==================================================
+   Action
+================================================== */
+.certification-action {
+    flex-shrink: 0;
 }
 
 /* ==================================================
    Mobile
 ================================================== */
 @media (max-width: 600px) {
-    .certification-item {
+    .certification-card {
         flex-direction: column;
-        align-items: center;
         text-align: center;
+        gap: 2.4rem;
+    }
+
+    .certification-description {
+        max-width: 100%;
     }
 }
