@@ -107,3 +107,37 @@
         gap: 3.2rem;
     }
 }
+
+/* ==================================================
+   Copy email interaction
+   ================================================== */
+.copy-email {
+    position: relative;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.copy-email:hover {
+    color: var(--color-accent);
+}
+
+.copy-feedback {
+    position: absolute;
+    top: -2.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.copy-email.copied .copy-feedback {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-4px);
+}
