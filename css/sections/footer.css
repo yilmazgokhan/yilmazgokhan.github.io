@@ -99,3 +99,13 @@ footer a:hover {
         text-align: center;
     }
 }
+
+/* ==================================================
+   Last updated (GitHub commit)
+   ================================================== */
+.last-updated {
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+    opacity: 0.45;
+    letter-spacing: 0.02em;
+}
